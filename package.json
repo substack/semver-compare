@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "compare two semver version strings, returning -1, 0, or 1",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "semver": "^5.0.3"
+  },
   "devDependencies": {
     "tape": "^3.0.0"
   },
