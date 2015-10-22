@@ -1,13 +1,5 @@
+var semver = require('semver');
+
 module.exports = function cmp (a, b) {
-    var pa = a.split('.');
-    var pb = b.split('.');
-    for (var i = 0; i < 3; i++) {
-        var na = Number(pa[i]);
-        var nb = Number(pb[i]);
-        if (na > nb) return 1;
-        if (nb > na) return -1;
-        if (!isNaN(na) && isNaN(nb)) return 1;
-        if (isNaN(na) && !isNaN(nb)) return -1;
-    }
-    return 0;
+    return semver.gt(a, b) ? 1 : semver.eq(a, b) ? 0 : -1;
 };
