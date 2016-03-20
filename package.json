@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "semver": "^5.1.0",
     "tape": "^3.0.0"
   },
   "scripts": {
