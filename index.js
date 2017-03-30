@@ -1,7 +1,7 @@
 module.exports = function cmp (a, b) {
     var pa = a.split('.');
     var pb = b.split('.');
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < Math.min(pa.length, pb.length); i++) {
         var na = Number(pa[i]);
         var nb = Number(pb[i]);
         if (na > nb) return 1;
