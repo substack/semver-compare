@@ -54,7 +54,7 @@ whereas the default lexicographic sort (`versions.sort()`) would be:
 
 # methods
 
-```
+```js
 var cmp = require('semver-compare')
 ```
 
